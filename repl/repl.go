@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/vm"
+	"github.com/cheaterlin/gpython/py"
+	"github.com/cheaterlin/gpython/vm"
 )
 
 // Possible prompts for the REPL

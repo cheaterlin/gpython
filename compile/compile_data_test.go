@@ -7,7 +7,7 @@
 package compile
 
 import (
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 var compileTestData = []struct {

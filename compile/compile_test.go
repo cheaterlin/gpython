@@ -14,7 +14,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 func EqString(t *testing.T, name string, a, b string) {

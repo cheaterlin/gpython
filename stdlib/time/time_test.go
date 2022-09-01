@@ -7,7 +7,7 @@ package time_test
 import (
 	"testing"
 
-	"github.com/go-python/gpython/pytest"
+	"github.com/cheaterlin/gpython/pytest"
 )
 
 func TestTime(t *testing.T) {

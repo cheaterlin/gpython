@@ -8,7 +8,7 @@ package glob
 import (
 	"path/filepath"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 func init() {

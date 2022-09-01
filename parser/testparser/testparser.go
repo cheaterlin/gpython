@@ -11,8 +11,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/go-python/gpython/compile"
-	"github.com/go-python/gpython/parser"
+	"github.com/cheaterlin/gpython/compile"
+	"github.com/cheaterlin/gpython/parser"
 )
 
 var (

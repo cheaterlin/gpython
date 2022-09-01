@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 var (

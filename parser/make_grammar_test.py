@@ -508,7 +508,7 @@ def main():
 package parser
 
 import (
-"github.com/go-python/gpython/py"
+"github.com/cheaterlin/gpython/py"
 )
 
 var grammarTestData = []struct {{

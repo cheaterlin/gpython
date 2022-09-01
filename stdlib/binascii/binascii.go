@@ -14,7 +14,7 @@ import (
 	"io"
 	"mime/quotedprintable"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 var (

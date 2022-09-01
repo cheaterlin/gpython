@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-python/gpython/ast"
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/ast"
+	"github.com/cheaterlin/gpython/py"
 )
 
 func TestCountIndent(t *testing.T) {

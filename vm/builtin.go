@@ -9,7 +9,7 @@ package vm
 import (
 	"strings"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 func builtinEvalOrExec(ctx py.Context, args py.Tuple, kwargs, currentLocals, currentGlobals, builtins py.StringDict, mode py.CompileMode) (py.Object, error) {

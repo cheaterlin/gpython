@@ -20,7 +20,7 @@ package sys
 import (
 	"os"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 const module_doc = `This module provides access to some objects used or maintained by the

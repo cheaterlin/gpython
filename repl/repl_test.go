@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	// import required modules
-	_ "github.com/go-python/gpython/stdlib"
+	_ "github.com/cheaterlin/gpython/stdlib"
 )
 
 type replTest struct {

@@ -12,7 +12,7 @@ import (
 	"os/user"
 	"path/filepath"
 
-	"github.com/go-python/gpython/repl"
+	"github.com/cheaterlin/gpython/repl"
 	"github.com/peterh/liner"
 )
 

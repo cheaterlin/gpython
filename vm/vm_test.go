@@ -11,8 +11,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/pytest"
+	"github.com/cheaterlin/gpython/py"
+	"github.com/cheaterlin/gpython/pytest"
 )
 
 func TestVm(t *testing.T) {

@@ -18,8 +18,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/go-python/gpython/ast"
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/ast"
+	"github.com/cheaterlin/gpython/py"
 )
 
 // The parser expects the lexer to return 0 on EOF.  Give it a name
@@ -259,6 +259,7 @@ var tokens = map[string]int{
 	"yield":    YIELD,
 }
 
+var tokenNoNeedToPrint map[string]bool
 var tokenToString map[int]string
 
 // Make tokenToString map
@@ -270,18 +271,31 @@ func init() {
 	for k, v := range tokens {
 		tokenToString[v] = k
 	}
+	tokenNoNeedToPrint = map[string]bool{}
 	tokenToString[eof] = "eof"
+	tokenNoNeedToPrint["eof"] = true
 	tokenToString[eofError] = "eofError"
+	tokenNoNeedToPrint["eofError"] = true
 	tokenToString[NEWLINE] = "NEWLINE"
+	tokenNoNeedToPrint["NEWLINE"] = true
 	tokenToString[ENDMARKER] = "ENDMARKER"
+	tokenNoNeedToPrint["ENDMARKER"] = true
 	tokenToString[NAME] = "NAME"
+	tokenNoNeedToPrint["NAME"] = true
 	tokenToString[INDENT] = "INDENT"
+	tokenNoNeedToPrint["INDENT"] = true
 	tokenToString[DEDENT] = "DEDENT"
+	tokenNoNeedToPrint["DEDENT"] = true
 	tokenToString[STRING] = "STRING"
+	tokenNoNeedToPrint["STRING"] = true
 	tokenToString[NUMBER] = "NUMBER"
+	tokenNoNeedToPrint["NUMBER"] = true
 	tokenToString[FILE_INPUT] = "FILE_INPUT"
+	tokenNoNeedToPrint["FILE_INPUT"] = true
 	tokenToString[SINGLE_INPUT] = "SINGLE_INPUT"
+	tokenNoNeedToPrint["SINGLE_INPUT"] = true
 	tokenToString[EVAL_INPUT] = "EVAL_INPUT"
+	tokenNoNeedToPrint["EVAL_INPUT"] = true
 }
 
 // True if there are any open brackets
@@ -300,7 +314,7 @@ const (
 	isEof
 )
 
-// A Token with value
+// LexToken is A Token with value
 type LexToken struct {
 	token int
 	value py.Object
@@ -319,6 +333,18 @@ func newLexToken(token int, yylval *yySymType) (lt LexToken) {
 		lt.value = nil
 	}
 	return
+}
+
+// RawString return the raw code token string
+func (lt *LexToken) RawString() string {
+	name := tokenToString[lt.token]
+	if lt.value == nil {
+		if !tokenNoNeedToPrint[name] {
+			return name
+		}
+		return ""
+	}
+	return fmt.Sprintf("%v", lt.value)
 }
 
 // String a LexToken

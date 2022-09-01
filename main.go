@@ -14,11 +14,11 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/repl"
-	"github.com/go-python/gpython/repl/cli"
+	"github.com/cheaterlin/gpython/py"
+	"github.com/cheaterlin/gpython/repl"
+	"github.com/cheaterlin/gpython/repl/cli"
 
-	_ "github.com/go-python/gpython/stdlib"
+	_ "github.com/cheaterlin/gpython/stdlib"
 )
 
 var (

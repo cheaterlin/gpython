@@ -310,7 +310,7 @@ def main():
 package symtable
 
 import (
-"github.com/go-python/gpython/py"
+"github.com/cheaterlin/gpython/py"
 )
 
 var symtableTestData = []struct {

@@ -10,8 +10,8 @@ package parser
 
 import (
 	"fmt"
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/ast"
+	"github.com/cheaterlin/gpython/py"
+	"github.com/cheaterlin/gpython/ast"
 )
 
 // NB can put code blocks in not just at the end

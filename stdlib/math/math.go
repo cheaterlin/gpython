@@ -16,7 +16,7 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 /* Here are some comments from Tim Peters, extracted from the

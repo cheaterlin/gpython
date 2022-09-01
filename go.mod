@@ -1,6 +1,6 @@
-module github.com/go-python/gpython
+module github.com/cheaterlin/gpython
 
-go 1.18
+go 1.19
 
 require (
 	github.com/google/go-cmp v0.5.8
@@ -14,3 +14,4 @@ require (
 	github.com/rivo/uniseg v0.3.4 // indirect
 	golang.org/x/sys v0.0.0-20220817070843-5a390386f1f2 // indirect
 )
+gi

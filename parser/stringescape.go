@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"strconv"
 
-	"github.com/go-python/gpython/py"
+	"github.com/cheaterlin/gpython/py"
 )
 
 // DecodeEscape unescapes a backslash-escaped buffer

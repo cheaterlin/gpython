@@ -14,19 +14,19 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/stdlib/marshal"
-	"github.com/go-python/gpython/vm"
+	"github.com/cheaterlin/gpython/py"
+	"github.com/cheaterlin/gpython/stdlib/marshal"
+	"github.com/cheaterlin/gpython/vm"
 
-	_ "github.com/go-python/gpython/stdlib/binascii"
-	_ "github.com/go-python/gpython/stdlib/builtin"
-	_ "github.com/go-python/gpython/stdlib/glob"
-	_ "github.com/go-python/gpython/stdlib/math"
-	_ "github.com/go-python/gpython/stdlib/os"
-	_ "github.com/go-python/gpython/stdlib/string"
-	_ "github.com/go-python/gpython/stdlib/sys"
-	_ "github.com/go-python/gpython/stdlib/tempfile"
-	_ "github.com/go-python/gpython/stdlib/time"
+	_ "github.com/cheaterlin/gpython/stdlib/binascii"
+	_ "github.com/cheaterlin/gpython/stdlib/builtin"
+	_ "github.com/cheaterlin/gpython/stdlib/glob"
+	_ "github.com/cheaterlin/gpython/stdlib/math"
+	_ "github.com/cheaterlin/gpython/stdlib/os"
+	_ "github.com/cheaterlin/gpython/stdlib/string"
+	_ "github.com/cheaterlin/gpython/stdlib/sys"
+	_ "github.com/cheaterlin/gpython/stdlib/tempfile"
+	_ "github.com/cheaterlin/gpython/stdlib/time"
 )
 
 func init() {

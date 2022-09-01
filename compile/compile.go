@@ -14,11 +14,11 @@ import (
 	"log"
 	"strings"
 
-	"github.com/go-python/gpython/ast"
-	"github.com/go-python/gpython/parser"
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/symtable"
-	"github.com/go-python/gpython/vm"
+	"github.com/cheaterlin/gpython/ast"
+	"github.com/cheaterlin/gpython/parser"
+	"github.com/cheaterlin/gpython/py"
+	"github.com/cheaterlin/gpython/symtable"
+	"github.com/cheaterlin/gpython/vm"
 )
 
 type loopType byte
